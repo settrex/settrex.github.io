@@ -1,7 +1,46 @@
-body{
-    text-align: center;
-    background: #031321;
-    font-size: 35px;
-    color:  #2101f3;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
     font-family: "Tw Cen MT";
+}
+
+body{
+    background:  #031321;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding: 15px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size:25px;
+    color: #ededed;
+    text-decoration: none;
+}
+
+.logo:hover{
+    color: #2196f3;
+    transition:0.3s;
+}
+
+.navbar a{
+    font-size: 20px;
+    color: #ededed;
+    text-decoration: none;
+    margin-left: 35px;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: #2196f3;
+    transition:0.3s;
 }
