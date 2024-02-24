@@ -4,9 +4,14 @@
     box-sizing: border-box;    
     font-family: "Tw Cen MT";
 }
+.img{
+    margin: 0;
+    padding: 0;
+
+}
 
 body{
-    background:  #031321;
+    color: #ededed;
 }
 
 .header{
@@ -43,4 +48,141 @@ body{
 .navbar a.active{
     color: #2196f3;
     transition:0.3s;
+}
+
+.aboutme{
+    height: 100vh;
+    background: url("https://www.dropbox.com/scl/fi/uy03ws953jrf09vn63oxq/website.png?rlkey=20zcdfkyhvxkdqdouttofroyf&raw=1") no-repeat;
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+
+
+}
+.aboutme-content{
+    max-width: 600px;
+    line-height: 1.2;
+}
+
+.aboutme-content h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.aboutme-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #2196f3;
+}
+
+.aboutme-content p{
+    font-size: 20px;
+    margin-top: 0.5vh;
+}
+
+.aboutme-content .btn-box{
+    justify-content: space-between;
+    width:600px;
+    height:40px;
+}
+
+.btn-box a{
+    position: relative;
+    margin-top: 1vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 90%;
+    background: #2196f3;
+    border: 2px solid #2196f3;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #031321;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+
+.btn-box a:nth-child(1){
+    background: transparent;
+    color: #2196f3;
+}
+
+.btn-box a:nth-child(1):hover{
+
+    color: #031321;
+    transition: 0.5s;
+}
+
+
+.btn-box a:nth-child(1)::before{
+
+    color: #2196f3;
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #2196f3;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover:before{
+    width: 100%;
+}
+
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 125px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background:transparent;
+    border: 2px solid #2196f3;
+    border-radius:50%;
+    font-size: 20px;
+    color: #2196f3;
+    text-decoration: none;
+    z-index:1;
+    overflow: hidden;
+}
+
+.home-sci a:hover{
+    color: #031321;
+}
+
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #2196f3;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover:before{
+    width: 100%;
 }
