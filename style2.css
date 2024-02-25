@@ -22,6 +22,7 @@ body{
     z-index: 100;
 }
 
+
 .logo{
     font-size:25px;
     color: #ededed;
@@ -66,6 +67,7 @@ body{
     font-weight: 700;
 }
 
+
 .aboutme-content h3{
     font-size: 32px;
     font-weight: 700;
@@ -104,6 +106,8 @@ body{
     
 }
 
+
+
 .btn-box a:nth-child(1){
     background: transparent;
     color: #2196f3;
@@ -140,7 +144,7 @@ body{
 .home-sci{
     position: absolute;
     bottom: 40px;
-    width: 125px;
+    width: 180px;
     display: flex;
     justify-content: space-between;
 }
@@ -181,3 +185,10 @@ body{
 .home-sci a:hover:before{
     width: 100%;
 }
+
+@keyframes showRight {
+    100%{
+        width: 0;
+    }
+}
+
