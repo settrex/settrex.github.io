@@ -1,0 +1,73 @@
+.contact{
+    margin-top: 450px;
+}
+
+:root{
+    --shadow-color: rgba(0, 0, 0, .2);
+}
+.contact .contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+
+.contact-container .contact-box{
+    flex: 20px 20px 50px;
+    background: #eaeaea;
+    padding: 60px 40px 30px;
+    border-radius: 2.5rem;
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    text-align: center;
+    border-top: .6rem solid #387BB9;
+    border-bottom: .6rem solid #387BB9;
+    color: #387bb9;
+}
+
+.contact-box i{
+    font-size: 7rem;
+    color: #387bb9;
+}
+
+.contact-box h3{
+    font-size: 2rem;
+    color: #387bb9;
+}
+
+.services-box p{
+    font-size:2rem;
+    margin: 1rem 0rem 3rem;
+    
+}
+
+/* Animation for boxes */
+
+.contact-box p {
+    position: absolute;
+    bottom: -100%; 
+    left: 0;
+    width: 100%;
+    transition: bottom 0.3s ease; 
+    margin-bottom: 400px;
+}
+
+.contact-box:hover p {
+    bottom: 0; 
+}
+
+.contact-box p {
+    position: absolute;
+    bottom: -100%; 
+    left: 0;
+    width: 100%;
+    margin-bottom: 400px;
+}
+
+.contact-box:hover p {
+    bottom: 0; 
+}
+
+.contact-box{
+    text-decoration: none;
+}
